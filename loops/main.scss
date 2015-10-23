@@ -1,10 +1,10 @@
-@mixin band($members...) {
+@mixin band($name, $members...) {
 	@each $member in $members {
-		.bandmember.#{member} {
-			background: url("images/#{member}.jpg")
+		.#{$name}.#{$member} {
+			background: url("images/#{name}/#{member}.jpg")
 		}
 	}
 }
 
-@include band(thom, jonny, colin, phil);
-@include band(trent);
+@include band(radiohead, thom, jonny, colin, phil);
+@include band(nin, trent);
