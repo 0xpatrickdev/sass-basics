@@ -34,10 +34,10 @@ body {
   .button a {
     color: red; }
 
-.bar, .menu {
+.menu {
   height: 14px;
   font-size: 10px; }
-  .bar > div, .menu > div {
+  .menu > div {
     float: left;
     clear: none; }
 

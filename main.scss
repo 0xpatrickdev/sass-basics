@@ -48,7 +48,7 @@ body {
 }
 
 
-.bar {
+%bar {
 	height: 14px;
 	font-size: 10px;
 	> div {
@@ -58,6 +58,10 @@ body {
 }
 
 .menu {
-	@extend .bar;
+	@extend %bar;
 	background: #345;
+}
+
+.menu {
+	@extend %bar;
 }
