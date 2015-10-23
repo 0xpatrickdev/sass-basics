@@ -1,10 +1,33 @@
-@mixin band($name, $members) {
+@mixin box($size, $color) {
+	width: $size;
+	height: $size;
+	background: $color;
+}
+
+.box {
+	@include box($color: blue, $size: 20px);
+}
+
+@mixin band($name, $members...) {
 	@each $member in $members {
 		.#{$name}.#{$member} {
-			background: url("images/#{name}/#{member}.jpg")
+			background: url("images/#{$name}/#{$member}.jpg")
 		}
 	}
 }
 
-@include band(radiohead, thom jonny colin phil);
+@include band(radiohead, thom, jonny, colin, phil);
 @include band(nin, trent);
+
+// depreciated 
+
+// @mixin band($name, $members) {
+// 	@each $member in $members {
+// 		.#{$name}.#{$member} {
+// 			background: url("images/#{$name}/#{$member}.jpg")
+// 		}
+// 	}
+// }
+// 
+// @include band(radiohead, thom jonny colin phil);
+// @include band(nin, trent);
