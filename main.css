@@ -1,6 +1,9 @@
 body {
   background: #eee; }
 
+.blog > h1 {
+  color: red;
+  border: 1px solid red; }
 .blog .entry h1 {
   font-size: 20px;
   color: blue; }
@@ -13,5 +16,7 @@ body {
     margin: 10px; }
 .blog .entry a {
   color: red; }
+  .blog .entry a:hover {
+    color: blue; }
 
 /*# sourceMappingURL=main.css.map */
