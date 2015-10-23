@@ -1,13 +1,17 @@
-.blue {
-  color: blue; }
+.blue.color {
+  color: blue;
+  background-image: url("images/blue.jpg"); }
 
-.red {
-  color: red; }
+.red.color {
+  color: red;
+  background-image: url("images/red.jpg"); }
 
-.green {
-  color: green; }
+.green.color {
+  color: green;
+  background-image: url("images/green.jpg"); }
 
-.gray {
-  color: gray; }
+.gray.color {
+  color: gray;
+  background-image: url("images/gray.jpg"); }
 
 /*# sourceMappingURL=main.css.map */

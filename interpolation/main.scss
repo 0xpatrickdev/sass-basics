@@ -1,6 +1,8 @@
 @mixin color_class($color) {
-	.#{$color} {
+	.#{$color}.color {
 		color: $color;
+		background-image: url("images/#{$color}.jpg");
+		// or background-image: url("images/" + $color + ".jpg");
 	}
 }
 
