@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAEE,kBAAsB;EACrB,UAAU,EAAE,wBACb;;AAFA,kBAAsB;EACrB,UAAU,EAAE,wBACb;;AAFA,kBAAsB;EACrB,UAAU,EAAE,wBACb;;AAFA,kBAAsB;EACrB,UAAU,EAAE,wBACb",
+"mappings": "AAEE,kBAAsB;EACrB,UAAU,EAAE,wBACb;;AAFA,kBAAsB;EACrB,UAAU,EAAE,wBACb;;AAFA,kBAAsB;EACrB,UAAU,EAAE,wBACb;;AAFA,kBAAsB;EACrB,UAAU,EAAE,wBACb;;AAFA,kBAAsB;EACrB,UAAU,EAAE,wBACb",
 "sources": ["main.scss"],
 "names": [],
 "file": "main.css"
