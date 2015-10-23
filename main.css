@@ -1,51 +1,47 @@
-/*
-Error: Invalid CSS after "...lude roundy(2px": expected ")", was ". red);"
-        on line 46 of ./main.scss
+body {
+  background: #369;
+  font-family: Futura, "Trebuchet MS", sans-serif; }
+  body > h1 {
+    font-size: 3em;
+    color: #eee;
+    margin: 5px 0 0 5px; }
 
-41: .box {
-42: 	@include roundy(4px, blue);
-43: }
-44: 
-45: .button {
-46: 	@include roundy(2px. red);
-47:   background: #345;
-48: }
+.entry {
+  background: white;
+  margin: 5px;
+  padding: 6.5px; }
+  .entry h1 {
+    font-size: 1.2em;
+    margin: 0px; }
+  .entry .date {
+    font-size: 0.3em;
+    color: #369; }
+  .entry a {
+    color: #369; }
 
-Backtrace:
-./main.scss:46
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/scss/parser.rb:1162:in `expected'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/script/lexer.rb:221:in `expected!'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/script/parser.rb:580:in `assert_tok'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/script/parser.rb:101:in `parse_mixin_include_arglist'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/scss/parser.rb:1024:in `sass_script'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/scss/parser.rb:236:in `include_directive'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/scss/parser.rb:219:in `special_directive'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/scss/parser.rb:194:in `directive'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/scss/parser.rb:658:in `block_child'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/scss/parser.rb:647:in `block_contents'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/scss/parser.rb:639:in `block'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/scss/parser.rb:632:in `ruleset'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/scss/parser.rb:657:in `block_child'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/scss/parser.rb:650:in `block_contents'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/scss/parser.rb:42:in `parse'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/engine.rb:393:in `_to_tree'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Users/pcooney10/.rvm/gems/ruby-2.2.1/gems/sass-3.4.14/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...lude roundy(2px\": expected \")\", was \". red);\"\A         on line 46 of ./main.scss\A \A 41: .box {\A 42: 	@include roundy(4px, blue);\A 43: }\A 44: \A 45: .button {\A 46: 	@include roundy(2px. red);\A 47:   background: #345;\A 48: }"; }
+.box {
+  border-radius: 4px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px; }
+  .box a {
+    color: blue; }
+
+.button {
+  border-radius: 2px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: #345; }
+  .button a {
+    color: red; }
+
+.bar, .menu {
+  height: 14px;
+  font-size: 10px; }
+  .bar > div, .menu > div {
+    float: left;
+    clear: none; }
+
+.menu {
+  background: #345; }
+
+/*# sourceMappingURL=main.css.map */

@@ -43,6 +43,21 @@ body {
 }
 
 .button {
-	@include roundy(2px. red);
+	@include roundy(2px, red);
   background: #345;
+}
+
+
+.bar {
+	height: 14px;
+	font-size: 10px;
+	> div {
+		float: left;
+		clear: none;
+	}
+}
+
+.menu {
+	@extend .bar;
+	background: #345;
 }
