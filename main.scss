@@ -28,3 +28,22 @@ body {
 		color: $primary-color;
 	}
 }
+
+@mixin roundy {
+	border-radius: 4px;
+ 	border-top-right-radius: 8px;
+ 	border-bottom-left-radius: 8px;
+}
+
+.box {
+  border-radius: 4px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.button {
+  border-radius: 4px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background: #345;
+}
