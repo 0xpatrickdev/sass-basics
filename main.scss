@@ -35,18 +35,8 @@ body {
  	border-bottom-left-radius: 8px;
 }
 
-@mixin green_links {
-	a {
-		color: green;
-		&hover {
-			color: blue;
-		}
-	}
-}
-
 .box {
 	@include roundy;
-	@include green_links;
 }
 
 .button {
