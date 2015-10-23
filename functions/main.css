@@ -4,19 +4,21 @@ div {
   border: 1px solid black; }
 
 .color {
-  background: orange; }
+  background: #369; }
 
 .red, .blue, .green {
   float: left; }
 
 .red {
   background: red;
-  width: 255px; }
+  width: 51px; }
 
 .blue {
-  background: blue; }
+  background: blue;
+  width: 153px; }
 
 .green {
-  background: green; }
+  background: green;
+  width: 102px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,8 @@
-$color: orange;
+$color: #369;
+
+@function pxify($value) {
+	@return unquote($value + "px")
+}
 
 div {
 	height: 100px;
@@ -16,13 +20,15 @@ div {
 
 .red {
 	background: red;
-	width: unquote(red($color) + "px");
+	width: pxify(red($color));
 }
 
 .blue {
 	background: blue;
+	width: pxify(blue($color));
 }
 
 .green {
 	background: green;
+	width: pxify(green($color));
 }
