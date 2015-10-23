@@ -1,3 +1,4 @@
+/* something */
 body {
   background: #287167;
   font-family: sans-serif;
@@ -5,5 +6,8 @@ body {
 
 a {
   color: #bc4354; }
+
+body.about_us {
+  font-size: 100px; }
 
 /*# sourceMappingURL=main.css.map */

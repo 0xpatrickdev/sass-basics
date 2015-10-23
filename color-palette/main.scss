@@ -1,15 +1,8 @@
-$background: desaturate(#187, 30%);
-$text-color: complement($background);
-$highlighted-text-color: lighten($text-color, 20%); 
+// Definings
+@import "_variables.scss";
 
-//also options for hue, mix, and opacity
+// Global Styles
+@import "_globals.scss";
 
-body {
-	background: $background;
-	font-family: sans-serif;
-	color: $text-color;
-}
-
-a {
-	color: $highlighted-text-color;
-}
+// Page Specifics
+@import "pages/_about_us.scss";
