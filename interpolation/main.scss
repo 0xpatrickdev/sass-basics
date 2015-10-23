@@ -2,8 +2,28 @@
 	.#{$color}.color {
 		color: $color;
 		background-image: url("images/#{$color}.jpg");
-		// or background-image: url("images/" + $color + ".jpg");
+		@if $color == red {
+			border: 1px solid black;
+		}
 	}
+}
+
+@mixin box($width) {
+	@if $width > 100px {
+		padding: 0px;
+	} @else if $width == 100px {
+		padding: 5px;
+		.big {
+			content: "huge!";
+		}
+	} 
+	@else {
+		padding: 10px;
+	}
+}
+
+div {
+	@include box(100px);
 }
 
 @include color_class(blue);

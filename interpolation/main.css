@@ -1,10 +1,16 @@
+div {
+  padding: 5px; }
+  div .big {
+    content: "huge!"; }
+
 .blue.color {
   color: blue;
   background-image: url("images/blue.jpg"); }
 
 .red.color {
   color: red;
-  background-image: url("images/red.jpg"); }
+  background-image: url("images/red.jpg");
+  border: 1px solid black; }
 
 .green.color {
   color: green;
