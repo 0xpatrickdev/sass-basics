@@ -1,16 +1,10 @@
-// before
-.red {
-	color: red;
+@mixin color_class($color) {
+	.#{$color} {
+		color: $color;
+	}
 }
 
-.green {
-	color: green;
-}
-
-.blue {
-	color: blue;
-}
-
-.gray {
-	color: gray;
-}
+@include color_class(blue);
+@include color_class(red);
+@include color_class(green);
+@include color_class(gray);
