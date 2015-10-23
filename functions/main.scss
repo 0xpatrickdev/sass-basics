@@ -1,7 +1,28 @@
+$color: orange;
+
 div {
 	height: 100px;
-	width: 100px;
+	width: 255px;
 	border: 1px solid black;
 }
 
-//renders 4 boxes on top of each other bc there's nothing in them
+.color {
+	background: $color;
+}
+
+.red, .blue, .green {
+	float: left;
+}
+
+.red {
+	background: red;
+	width: unquote(red($color) + "px");
+}
+
+.blue {
+	background: blue;
+}
+
+.green {
+	background: green;
+}

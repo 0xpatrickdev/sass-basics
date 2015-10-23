@@ -1,6 +1,22 @@
 div {
   height: 100px;
-  width: 100px;
+  width: 255px;
   border: 1px solid black; }
+
+.color {
+  background: orange; }
+
+.red, .blue, .green {
+  float: left; }
+
+.red {
+  background: red;
+  width: 255px; }
+
+.blue {
+  background: blue; }
+
+.green {
+  background: green; }
 
 /*# sourceMappingURL=main.css.map */
